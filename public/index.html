@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Weather & Currency</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+    <h1>Weather App</h1>
+
+    <div class="search">
+        <input id="cityInput" placeholder="Enter city">
+        <button id="searchBtn">Get Weather</button>
+        <p id="loading" class="hidden">Loading weather...</p>
+    </div>
+
+    <div id="weatherCard" class="card hidden">
+        <h2 id="cityName"></h2>
+        <p id="description"></p>
+        <p>Temp: <span id="temp"></span> °C</p>
+        <p>Feels like: <span id="feels"></span> °C</p>
+        <p>Wind: <span id="wind"></span> m/s</p>
+        <p>Coords: <span id="coords"></span></p>
+        <p>Rain: <span id="rain"></span></p>
+    </div>
+
+    <div id="currencyCard" class="card hidden">
+        <h2> Currency</h2>
+        <p id="currencyText"></p>
+    </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
