@@ -1,4 +1,11 @@
+console.log("SCRIPT LOADED");
+
+const btn = document.getElementById("searchBtn");
+const input = document.getElementById("cityInput");
+
+
 btn.addEventListener("click", async () => {
+    console.log("BUTTON CLICKED");
     const city = input.value.trim();
     if (!city) return alert("Enter city");
 
